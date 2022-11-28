@@ -1,0 +1,179 @@
+/* headings - these elements in css, broad changes only*/
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: bolder;
+}
+
+p {
+  color: #B1B1Bf;
+}
+
+/* headings */
+
+.feature-title {
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.big-heading {
+  font-weight: bolder;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  text-shadow: -1px -1px 0.5px grey;
+}
+
+.container-fluid {
+   padding: 7% 15%;
+}
+
+/* sections: grouping colours together - refracturing to make 
+code more modular and re-usable*/
+
+.coloured-section {
+  background-color: #ff4c68;
+  color: #fff;
+
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+/*navigation bar*/
+
+.navbar {
+  padding-bottom: 4.5rem;
+
+}
+.navbar-brand {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: -1px -1px 0.5px grey; /*do more reading on text shadow*/
+
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  font-size: 1.2rem;
+} /*font-family: 'Ubuntu', sans-serif;*/
+
+
+/*buttons*/
+
+.download-button {
+  margin: 5% 3% 5% 0;
+  text-shadow: -1px -1px 0.5px grey;
+}
+
+/*title image*/
+
+/* #title {
+  text-align: left; 
+} - don't need this - can combine changes with #title .conatainer-fluid */
+
+#title .container-fluid {
+  text-align: left;
+  padding: 3% 15% 7%;
+}
+
+.title-image {
+  width: 23%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 23%;
+}
+ 
+/* media query */
+
+@media (max-width: 1028px) {
+
+.title-image {
+  position: static;
+  transform: rotate(0);
+  width: 60%;
+}
+
+#title {
+  text-align: center;
+}
+}
+
+/*features section*/
+
+#features {
+  position: relative;
+}
+
+.feature-box {
+  padding: 5%;
+}
+
+.icon {
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #ff4c68;
+}
+
+/*testemonial section*/
+
+ #testimonials {
+  background-color: #ef8172;
+ }
+
+ .testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+ }
+
+ .testimonial-image {
+  width: 10%;
+   border-radius: 100%;
+   margin: 20px;
+ }
+
+
+ /* press */
+
+#press {
+  background-color: #ef8172;
+  padding-bottom: 3%;
+
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/*pricing section*/
+
+#pricing {
+  padding: 100px;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+.fs {
+  margin: 20px 10px;
+}
